@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "avengers__endgame__2019__avengers_logo_png__by_mintmovi3_dd4bz30-fullview.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
