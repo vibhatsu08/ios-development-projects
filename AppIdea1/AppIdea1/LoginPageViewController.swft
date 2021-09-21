@@ -1,0 +1,24 @@
+//
+//  ViewController.swift
+//  AppIdea1
+//
+//  Created by Vedant Mistry on 21/09/21.
+//
+
+import UIKit
+
+class LoginPageViewController: UIViewController {
+
+    @IBOutlet var starterImage: UIImageView!
+    @IBOutlet var loginButton: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        starterImage.layer.cornerRadius = starterImage.bounds.width/2
+        loginButton.layer.cornerRadius = 20
+    }
+
+
+}
+
