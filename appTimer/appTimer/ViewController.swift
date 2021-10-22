@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var countdownLabel: UILabel!
+    @IBOutlet var countdownTimerStatusLabel: UILabel!
     
     var timer =  Timer() //create a variable for the timer with an optional value.
     var timeLeft = 0 //the time for the timer
@@ -30,9 +31,14 @@ class ViewController: UIViewController {
     
     @objc func update(){
         
-        if timeLeft > 0{
+        if timeLeft >= 0{
             countdownLabel.text = "\(timeLeft)"
+            countdownTimerStatusLabel.text = "Timer in progress!"
             timeLeft -= 1
+            
+            if timeLeft == 0{
+                countdownTimerStatusLabel.text = "Done!"
+            }
         }
     }
 
