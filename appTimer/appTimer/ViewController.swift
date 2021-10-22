@@ -11,15 +11,17 @@ class ViewController: UIViewController {
 
     @IBOutlet var countdownLabel: UILabel!
     
-    var timer: Timer? //create a variable for the timer with an optional value.
+    var timer =  Timer() //create a variable for the timer with an optional value.
     var timeLeft = 0 //the time for the timer
     
     @IBAction func firstButtonPressed(_ sender: UIButton) {
+        timer.invalidate()
         countdownLabel.text = sender.currentTitle
         timeLeft = 60
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(update), userInfo: nil, repeats: true)
     }
     @IBAction func secondButtonPressed(_ sender: UIButton) {
+        timer.invalidate()
         countdownLabel.text = sender.currentTitle
         timeLeft = 120
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(update), userInfo: nil, repeats: true)
@@ -28,12 +30,10 @@ class ViewController: UIViewController {
     
     @objc func update(){
         
-        if timeLeft <= 0{
-            timer?.invalidate()
-            timer = nil
+        if timeLeft > 0{
+            countdownLabel.text = "\(timeLeft)"
+            timeLeft -= 1
         }
-        timeLeft -= 1
-        countdownLabel.text = "\(timeLeft)"
     }
 
 
