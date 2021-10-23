@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="countdownTimer2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="GeX-5H-qPq">
+                                <rect key="frame" x="30" y="144" width="330" height="566"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zt1-Ny-P2U">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="37"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.34901960784313724" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="QTz-qj-bQw">
+                                        <rect key="frame" x="64.000000000000014" y="77" width="202.33333333333337" height="112.66666666666669"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="70"/>
+                                        <color key="textColor" red="1" green="0.90588235294117647" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="j2f-0W-fFt">
+                                        <rect key="frame" x="0.0" y="229.66666666666671" width="330" height="336.33333333333326"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vt-0J-4uU">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="85.333333333333329"/>
+                                                <color key="backgroundColor" red="0.27843137254901962" green="0.23137254901960785" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="25:00">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="firstCountdownButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIo-xc-vdh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDD-fR-Ool">
+                                                <rect key="frame" x="0.0" y="125.33333333333331" width="330" height="85.666666666666686"/>
+                                                <color key="backgroundColor" red="0.27843137254901962" green="0.23137254901960785" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="5:00">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="secondCountdownButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hNM-6D-2DI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g16-gq-myw">
+                                                <rect key="frame" x="0.0" y="250.99999999999997" width="330" height="85.333333333333343"/>
+                                                <color key="backgroundColor" red="0.91764705882352937" green="0.20784313725490194" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="RESET TIMER">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resetCountdownButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQM-yf-otd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="j2f-0W-fFt" secondAttribute="trailing" id="h3V-NA-RnK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zt1-Ny-P2U" secondAttribute="trailing" id="sCk-KY-qNw"/>
+                                    <constraint firstItem="j2f-0W-fFt" firstAttribute="leading" secondItem="GeX-5H-qPq" secondAttribute="leading" id="tKP-gD-1ey"/>
+                                    <constraint firstItem="Zt1-Ny-P2U" firstAttribute="leading" secondItem="GeX-5H-qPq" secondAttribute="leading" id="zy9-Ja-7eZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.019607843137254902" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GeX-5H-qPq" secondAttribute="trailing" constant="30" id="4yO-hj-805"/>
+                            <constraint firstItem="GeX-5H-qPq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Fk1-Qi-uWr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GeX-5H-qPq" secondAttribute="bottom" constant="100" id="KK4-sc-ILA"/>
+                            <constraint firstItem="GeX-5H-qPq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="RQ1-KI-3iw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countdownTimerDisplay" destination="QTz-qj-bQw" id="4wR-y8-5hg"/>
+                        <outlet property="countdownTimerStatus" destination="Zt1-Ny-P2U" id="BbP-zU-UtF"/>
+                        <outlet property="firstCountdownButton" destination="4vt-0J-4uU" id="gkc-Fb-CFQ"/>
+                        <outlet property="resetCountdownButton" destination="g16-gq-myw" id="hSo-Gz-DzW"/>
+                        <outlet property="secondCountdownButton" destination="tDD-fR-Ool" id="Lmb-l3-lsa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="84"/>
+        </scene>
+    </scenes>
+</document>
